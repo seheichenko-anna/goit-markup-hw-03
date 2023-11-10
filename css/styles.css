@@ -66,22 +66,28 @@ img {
     color: var(--accent-color);
 }
 
+.header-link-logo {
+    margin-right: 76px;
+}
+
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px 0;
+    padding: 0 15px;
+    width: 1158px;
 }
 
 .header-nav {
     display: flex;
-    gap: 76px;
+    align-items: center;
 }
 
 .header-nav-list,
 .header-contacts-list {
     display: flex;
     gap: 40px;
+    padding: 24px 0;
 }
 
 .header-logo {
@@ -136,6 +142,7 @@ img {
     line-height: 1.07;
     letter-spacing: 1.12px;
     text-align: center;
+    max-width: 496px;
 }
 
 .hero-order-btn {
@@ -150,6 +157,7 @@ img {
     padding: 16px 32px;
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    min-width: 169px;
 }
 
 .hero-order-btn:hover,
@@ -192,6 +200,10 @@ img {
     gap: 24px;
 }
 
+.list-advantages-item {
+    flex-basis: calc((100% - 72px) / 4);
+}
+
 .list-item-title {
     font-size: 20px;
     font-weight: 500;
@@ -209,6 +221,10 @@ img {
     justify-content: center;
 }
 
+.list-works-item {
+    flex-basis: calc((100% - 3 * 16px) / 3);
+}
+
 .section-our-team {
     padding-top: 120px;
 }
@@ -221,6 +237,7 @@ img {
 }
 
 .list-item-our-team {
+    flex-basis: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
@@ -250,7 +267,10 @@ img {
     padding: 100px 0;
 }
 
-
+.footer-link-logo {
+    margin-bottom: 16px;
+    display: inline-block;
+}
 
 .footer-logo {
     color: var(--third-color)
@@ -258,15 +278,18 @@ img {
 
 .footer-text {
     color: var(--third-color);
-    margin-top: 17.5px;
     width: 264px;
+}
+
+.section-portfolio {
+    padding: 96px 0 120px 0;
 }
 
 .portfolio-filter-list {
     display: flex;
     justify-content: center;
     gap: 24px;
-    padding-top: 96px;
+    margin-bottom: 72px;
 }
 
 .portfolio-filter-btn {
@@ -288,6 +311,7 @@ img {
 .portfolio-filter-btn:active {
     color: var(--white-color);
     background-color: var(--hover-color);
+    border: 1px solid transparent;
 }
 
 
@@ -295,17 +319,19 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 24px;
-    padding-top: 72px;
+    column-gap: 24px;
+    row-gap: 48px;
+
 }
 
 .portfolio-list-item {
-    flex-basis: calc(33.3333% - 24px);
-    border: 1px solid var(--background);
+    flex-basis: calc((100% - 48px) / 3);
+
 }
 
 .card-portfolio-wrapper {
     padding: 32px 16px;
+    border: 1px solid var(--background);
 }
 
 .portfolio-list-item-title {
