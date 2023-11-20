@@ -87,9 +87,6 @@ img {
 .header-contacts-list {
     display: flex;
     gap: 40px;
-}
-
-.header-nav-list-item {
     padding: 24px 0;
 }
 
@@ -102,6 +99,7 @@ img {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding: 24px 0;
 }
 
 .header-nav-list .link:hover,
